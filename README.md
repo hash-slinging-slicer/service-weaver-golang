@@ -1,6 +1,6 @@
 # service-weaver-golang
 Latihan Service Weaver Golang CRUD
-- Required weaver
+- Required weaver, https://serviceweaver.dev/docs.html#installation
 
 # Command
 ## UNIX
