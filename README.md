@@ -14,8 +14,11 @@ weaver multi deploy config_unix.toml
 
 ## Windows
 go mod tidy
+
 weaver generate .
+
 go build .
+
 weaver multi deploy config.toml
 
 # Database
