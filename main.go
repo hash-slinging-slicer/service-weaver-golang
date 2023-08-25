@@ -143,10 +143,6 @@ func read(w http.ResponseWriter, r *http.Request) {
 }
 
 func update(w http.ResponseWriter, r *http.Request) {
-	if r.Method != http.MethodPut {
-		http.Error(w, "Method Tidak Diperbolehkan", http.StatusBadRequest)
-		return
-	}
 
 	// KONEKSI DB
 	db, err := sql.Open("mysql", "root:admin@tcp(localhost:3306)/golang")
@@ -196,12 +192,6 @@ func update(w http.ResponseWriter, r *http.Request) {
 }
 
 func delete(w http.ResponseWriter, r *http.Request) {
-
-	// Cek Method
-	if r.Method != http.MethodDelete {
-		http.Error(w, "Method Tidak Boleh", http.StatusBadRequest)
-		return
-	}
 
 	// KONEKSI DB
 	db, err := sql.Open("mysql", "root:admin@tcp(localhost:3306)/golang")
