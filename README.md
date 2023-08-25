@@ -5,8 +5,11 @@ Latihan Service Weaver Golang CRUD
 # Command
 ## UNIX
 go mod tidy
+
 weaver generate .
+
 go build .
+
 weaver multi deploy config_unix.toml
 
 ## Windows
