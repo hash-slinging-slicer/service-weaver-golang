@@ -1,0 +1,8 @@
+[serviceweaver]
+binary = "./latihanweaver.exe"
+
+[single]
+listeners.hello = {address="localhost:8181"}
+
+[multi]
+listeners.hello = {address="localhost:8080"}
